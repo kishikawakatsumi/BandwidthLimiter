@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.kishikawakatsumi.BandwidthLimiter.helper</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>SMAuthorizedClients</key>
+	<array>
+		<string>identifier &quot;com.kishikawakatsumi.BandwidthLimiter&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Development: Katsumi Kishikawa (9NXEJ2L8Q6)&quot;</string>
+	</array>
+</dict>
+</plist>

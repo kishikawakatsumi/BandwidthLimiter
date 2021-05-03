@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084F51FD2640C4C400B05BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F51FC2640C4C400B05BFC /* AppDelegate.swift */; };
+		084F52012640C4C400B05BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084F52002640C4C400B05BFC /* Assets.xcassets */; };
+		084F52042640C4C400B05BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084F52022640C4C400B05BFC /* Main.storyboard */; };
+		084F52132640C4EA00B05BFC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52122640C4EA00B05BFC /* main.swift */; };
+		084F521A2640C52900B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 084F52102640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		084F521E2640C70400B05BFC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F521D2640C70400B05BFC /* Helper.swift */; };
+		084F52202640C73800B05BFC /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F521F2640C73800B05BFC /* HelperConstants.swift */; };
+		084F52222640C77400B05BFC /* HelperExecutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52212640C77400B05BFC /* HelperExecutionService.swift */; };
+		084F52262640C7D200B05BFC /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52252640C7D200B05BFC /* HelperProtocol.swift */; };
+		084F52282640C80A00B05BFC /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52272640C80A00B05BFC /* Result+Extensions.swift */; };
+		084F522A2640C83600B05BFC /* ConnectionIdentityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52292640C83600B05BFC /* ConnectionIdentityService.swift */; };
+		084F522C2640C87900B05BFC /* ExecutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F522B2640C87900B05BFC /* ExecutionService.swift */; };
+		084F52312640C8C000B05BFC /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52272640C80A00B05BFC /* Result+Extensions.swift */; };
+		084F52322640C8C000B05BFC /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52252640C7D200B05BFC /* HelperProtocol.swift */; };
+		084F52332640C8CE00B05BFC /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F521F2640C73800B05BFC /* HelperConstants.swift */; };
+		084F52352641466F00B05BFC /* SettingsWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084F52342641466F00B05BFC /* SettingsWindow.storyboard */; };
+		084F52372641468F00B05BFC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52362641468F00B05BFC /* SettingsViewController.swift */; };
+		084F523B26415FA100B05BFC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F523A26415FA100B05BFC /* Profile.swift */; };
+		084F523D2641685C00B05BFC /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F523C2641685C00B05BFC /* Setting.swift */; };
+		084F52412641810D00B05BFC /* ExecutionServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52402641810D00B05BFC /* ExecutionServiceProxy.swift */; };
+		084F52442641819400B05BFC /* RemoteApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52432641819400B05BFC /* RemoteApplicationProtocol.swift */; };
+		084F52452641832D00B05BFC /* RemoteApplicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52432641819400B05BFC /* RemoteApplicationProtocol.swift */; };
+		084F5247264183EE00B05BFC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F5246264183EE00B05BFC /* Errors.swift */; };
+		084F52482641898400B05BFC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F5246264183EE00B05BFC /* Errors.swift */; };
+		084F524A26419A7700B05BFC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F524926419A7700B05BFC /* AppState.swift */; };
+		084F524C26419BF000B05BFC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F524B26419BF000B05BFC /* App.swift */; };
+		084F52522641B6CF00B05BFC /* TrafficShaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52512641B6CF00B05BFC /* TrafficShaper.swift */; };
+		084F52542641BCF400B05BFC /* TemporaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52532641BCF400B05BFC /* TemporaryFile.swift */; };
+		084F52562641DDB100B05BFC /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F52552641DDB100B05BFC /* TextFieldCell.swift */; };
+		085B23B72642963F00C91993 /* AuditTokenHack.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B23B62642963F00C91993 /* AuditTokenHack.m */; };
+		085B23B92642967300C91993 /* OSStatus+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085B23B82642967300C91993 /* OSStatus+Extensions.swift */; };
+		0872DEBE264253F200E651E2 /* ManageProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0872DEBD264253F200E651E2 /* ManageProfilesViewController.swift */; };
+		0872DEC0264272D200E651E2 /* NewProfileNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0872DEBF264272D200E651E2 /* NewProfileNameViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		084F52172640C50100B05BFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 084F51F12640C4C400B05BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 084F520F2640C4EA00B05BFC;
+			remoteInfo = com.kishikawakatsumi.BandwidthLimiter.helper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		084F520E2640C4EA00B05BFC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		084F52192640C52000B05BFC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				084F521A2640C52900B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		084F51F92640C4C400B05BFC /* Bandwidth Limiter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bandwidth Limiter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		084F51FC2640C4C400B05BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		084F52002640C4C400B05BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		084F52032640C4C400B05BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		084F52052640C4C400B05BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084F52062640C4C400B05BFC /* BandwidthLimiter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BandwidthLimiter.entitlements; sourceTree = "<group>"; };
+		084F52102640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.kishikawakatsumi.BandwidthLimiter.helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		084F52122640C4EA00B05BFC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		084F521B2640C57600B05BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084F521C2640C60600B05BFC /* launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = launchd.plist; sourceTree = "<group>"; };
+		084F521D2640C70400B05BFC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		084F521F2640C73800B05BFC /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		084F52212640C77400B05BFC /* HelperExecutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExecutionService.swift; sourceTree = "<group>"; };
+		084F52252640C7D200B05BFC /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		084F52272640C80A00B05BFC /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
+		084F52292640C83600B05BFC /* ConnectionIdentityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionIdentityService.swift; sourceTree = "<group>"; };
+		084F522B2640C87900B05BFC /* ExecutionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionService.swift; sourceTree = "<group>"; };
+		084F52342641466F00B05BFC /* SettingsWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsWindow.storyboard; sourceTree = "<group>"; };
+		084F52362641468F00B05BFC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		084F523A26415FA100B05BFC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		084F523C2641685C00B05BFC /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		084F52402641810D00B05BFC /* ExecutionServiceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionServiceProxy.swift; sourceTree = "<group>"; };
+		084F52432641819400B05BFC /* RemoteApplicationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApplicationProtocol.swift; sourceTree = "<group>"; };
+		084F5246264183EE00B05BFC /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		084F524926419A7700B05BFC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		084F524B26419BF000B05BFC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		084F52512641B6CF00B05BFC /* TrafficShaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficShaper.swift; sourceTree = "<group>"; };
+		084F52532641BCF400B05BFC /* TemporaryFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFile.swift; sourceTree = "<group>"; };
+		084F52552641DDB100B05BFC /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		085B23B42642963E00C91993 /* com.kishikawakatsumi.BandwidthLimiter.helper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "com.kishikawakatsumi.BandwidthLimiter.helper-Bridging-Header.h"; sourceTree = "<group>"; };
+		085B23B52642963F00C91993 /* AuditTokenHack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuditTokenHack.h; sourceTree = "<group>"; };
+		085B23B62642963F00C91993 /* AuditTokenHack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuditTokenHack.m; sourceTree = "<group>"; };
+		085B23B82642967300C91993 /* OSStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSStatus+Extensions.swift"; sourceTree = "<group>"; };
+		085B23BA2642A52A00C91993 /* uninstall_privileged_helper.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uninstall_privileged_helper.sh; sourceTree = "<group>"; };
+		0872DEBD264253F200E651E2 /* ManageProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageProfilesViewController.swift; sourceTree = "<group>"; };
+		0872DEBF264272D200E651E2 /* NewProfileNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileNameViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		084F51F62640C4C400B05BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		084F520D2640C4EA00B05BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		084F51F02640C4C400B05BFC = {
+			isa = PBXGroup;
+			children = (
+				084F51FB2640C4C400B05BFC /* BandwidthLimiter */,
+				084F52112640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */,
+				084F52422641813B00B05BFC /* Shared */,
+				084F51FA2640C4C400B05BFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		084F51FA2640C4C400B05BFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				084F51F92640C4C400B05BFC /* Bandwidth Limiter.app */,
+				084F52102640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		084F51FB2640C4C400B05BFC /* BandwidthLimiter */ = {
+			isa = PBXGroup;
+			children = (
+				084F51FC2640C4C400B05BFC /* AppDelegate.swift */,
+				084F52362641468F00B05BFC /* SettingsViewController.swift */,
+				0872DEBD264253F200E651E2 /* ManageProfilesViewController.swift */,
+				0872DEBF264272D200E651E2 /* NewProfileNameViewController.swift */,
+				084F52342641466F00B05BFC /* SettingsWindow.storyboard */,
+				084F52552641DDB100B05BFC /* TextFieldCell.swift */,
+				084F524B26419BF000B05BFC /* App.swift */,
+				084F524926419A7700B05BFC /* AppState.swift */,
+				084F523C2641685C00B05BFC /* Setting.swift */,
+				084F523A26415FA100B05BFC /* Profile.swift */,
+				084F522B2640C87900B05BFC /* ExecutionService.swift */,
+				084F52402641810D00B05BFC /* ExecutionServiceProxy.swift */,
+				084F52512641B6CF00B05BFC /* TrafficShaper.swift */,
+				084F52532641BCF400B05BFC /* TemporaryFile.swift */,
+				084F52022640C4C400B05BFC /* Main.storyboard */,
+				084F52002640C4C400B05BFC /* Assets.xcassets */,
+				084F52062640C4C400B05BFC /* BandwidthLimiter.entitlements */,
+				084F52052640C4C400B05BFC /* Info.plist */,
+			);
+			path = BandwidthLimiter;
+			sourceTree = "<group>";
+		};
+		084F52112640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */ = {
+			isa = PBXGroup;
+			children = (
+				084F521D2640C70400B05BFC /* Helper.swift */,
+				084F52212640C77400B05BFC /* HelperExecutionService.swift */,
+				084F52292640C83600B05BFC /* ConnectionIdentityService.swift */,
+				085B23B82642967300C91993 /* OSStatus+Extensions.swift */,
+				085B23B52642963F00C91993 /* AuditTokenHack.h */,
+				085B23B62642963F00C91993 /* AuditTokenHack.m */,
+				084F52122640C4EA00B05BFC /* main.swift */,
+				084F521B2640C57600B05BFC /* Info.plist */,
+				084F521C2640C60600B05BFC /* launchd.plist */,
+				085B23B42642963E00C91993 /* com.kishikawakatsumi.BandwidthLimiter.helper-Bridging-Header.h */,
+				085B23BA2642A52A00C91993 /* uninstall_privileged_helper.sh */,
+			);
+			path = com.kishikawakatsumi.BandwidthLimiter.helper;
+			sourceTree = "<group>";
+		};
+		084F52422641813B00B05BFC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				084F52432641819400B05BFC /* RemoteApplicationProtocol.swift */,
+				084F52252640C7D200B05BFC /* HelperProtocol.swift */,
+				084F521F2640C73800B05BFC /* HelperConstants.swift */,
+				084F5246264183EE00B05BFC /* Errors.swift */,
+				084F52272640C80A00B05BFC /* Result+Extensions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		084F51F82640C4C400B05BFC /* BandwidthLimiter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 084F52092640C4C400B05BFC /* Build configuration list for PBXNativeTarget "BandwidthLimiter" */;
+			buildPhases = (
+				084F51F52640C4C400B05BFC /* Sources */,
+				084F51F62640C4C400B05BFC /* Frameworks */,
+				084F51F72640C4C400B05BFC /* Resources */,
+				084F52192640C52000B05BFC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				084F52182640C50100B05BFC /* PBXTargetDependency */,
+			);
+			name = BandwidthLimiter;
+			productName = BandwidthLimiter;
+			productReference = 084F51F92640C4C400B05BFC /* Bandwidth Limiter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		084F520F2640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 084F52142640C4EA00B05BFC /* Build configuration list for PBXNativeTarget "com.kishikawakatsumi.BandwidthLimiter.helper" */;
+			buildPhases = (
+				084F520C2640C4EA00B05BFC /* Sources */,
+				084F520D2640C4EA00B05BFC /* Frameworks */,
+				084F520E2640C4EA00B05BFC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.kishikawakatsumi.BandwidthLimiter.helper;
+			productName = com.kishikawakatsumi.BandwidthLimiter.helper;
+			productReference = 084F52102640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		084F51F12640C4C400B05BFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					084F51F82640C4C400B05BFC = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					084F520F2640C4EA00B05BFC = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 084F51F42640C4C400B05BFC /* Build configuration list for PBXProject "BandwidthLimiter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 084F51F02640C4C400B05BFC;
+			productRefGroup = 084F51FA2640C4C400B05BFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				084F51F82640C4C400B05BFC /* BandwidthLimiter */,
+				084F520F2640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		084F51F72640C4C400B05BFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084F52352641466F00B05BFC /* SettingsWindow.storyboard in Resources */,
+				084F52012640C4C400B05BFC /* Assets.xcassets in Resources */,
+				084F52042640C4C400B05BFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		084F51F52640C4C400B05BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084F524C26419BF000B05BFC /* App.swift in Sources */,
+				0872DEBE264253F200E651E2 /* ManageProfilesViewController.swift in Sources */,
+				084F52542641BCF400B05BFC /* TemporaryFile.swift in Sources */,
+				084F52412641810D00B05BFC /* ExecutionServiceProxy.swift in Sources */,
+				084F52522641B6CF00B05BFC /* TrafficShaper.swift in Sources */,
+				084F52312640C8C000B05BFC /* Result+Extensions.swift in Sources */,
+				0872DEC0264272D200E651E2 /* NewProfileNameViewController.swift in Sources */,
+				084F523B26415FA100B05BFC /* Profile.swift in Sources */,
+				084F524A26419A7700B05BFC /* AppState.swift in Sources */,
+				084F52562641DDB100B05BFC /* TextFieldCell.swift in Sources */,
+				084F52372641468F00B05BFC /* SettingsViewController.swift in Sources */,
+				084F523D2641685C00B05BFC /* Setting.swift in Sources */,
+				084F51FD2640C4C400B05BFC /* AppDelegate.swift in Sources */,
+				084F5247264183EE00B05BFC /* Errors.swift in Sources */,
+				084F52442641819400B05BFC /* RemoteApplicationProtocol.swift in Sources */,
+				084F52332640C8CE00B05BFC /* HelperConstants.swift in Sources */,
+				084F52322640C8C000B05BFC /* HelperProtocol.swift in Sources */,
+				084F522C2640C87900B05BFC /* ExecutionService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		084F520C2640C4EA00B05BFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084F52222640C77400B05BFC /* HelperExecutionService.swift in Sources */,
+				084F52132640C4EA00B05BFC /* main.swift in Sources */,
+				085B23B72642963F00C91993 /* AuditTokenHack.m in Sources */,
+				084F52202640C73800B05BFC /* HelperConstants.swift in Sources */,
+				084F52282640C80A00B05BFC /* Result+Extensions.swift in Sources */,
+				085B23B92642967300C91993 /* OSStatus+Extensions.swift in Sources */,
+				084F52452641832D00B05BFC /* RemoteApplicationProtocol.swift in Sources */,
+				084F52482641898400B05BFC /* Errors.swift in Sources */,
+				084F522A2640C83600B05BFC /* ConnectionIdentityService.swift in Sources */,
+				084F521E2640C70400B05BFC /* Helper.swift in Sources */,
+				084F52262640C7D200B05BFC /* HelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		084F52182640C50100B05BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 084F520F2640C4EA00B05BFC /* com.kishikawakatsumi.BandwidthLimiter.helper */;
+			targetProxy = 084F52172640C50100B05BFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		084F52022640C4C400B05BFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				084F52032640C4C400B05BFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		084F52072640C4C400B05BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		084F52082640C4C400B05BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		084F520A2640C4C400B05BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BandwidthLimiter/BandwidthLimiter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27AEDK3C9F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BandwidthLimiter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.BandwidthLimiter;
+				PRODUCT_MODULE_NAME = BandwidthLimiter;
+				PRODUCT_NAME = "Bandwidth Limiter";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		084F520B2640C4C400B05BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BandwidthLimiter/BandwidthLimiter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27AEDK3C9F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = BandwidthLimiter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.BandwidthLimiter;
+				PRODUCT_MODULE_NAME = BandwidthLimiter;
+				PRODUCT_NAME = "Bandwidth Limiter";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		084F52152640C4EA00B05BFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 27AEDK3C9F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/${TARGET_NAME}/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "com.kishikawakatsumi.BandwidthLimiter.helper/com.kishikawakatsumi.BandwidthLimiter.helper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		084F52162640C4EA00B05BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 27AEDK3C9F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/${TARGET_NAME}/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "com.kishikawakatsumi.BandwidthLimiter.helper/com.kishikawakatsumi.BandwidthLimiter.helper-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		084F51F42640C4C400B05BFC /* Build configuration list for PBXProject "BandwidthLimiter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084F52072640C4C400B05BFC /* Debug */,
+				084F52082640C4C400B05BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		084F52092640C4C400B05BFC /* Build configuration list for PBXNativeTarget "BandwidthLimiter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084F520A2640C4C400B05BFC /* Debug */,
+				084F520B2640C4C400B05BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		084F52142640C4EA00B05BFC /* Build configuration list for PBXNativeTarget "com.kishikawakatsumi.BandwidthLimiter.helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084F52152640C4EA00B05BFC /* Debug */,
+				084F52162640C4EA00B05BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 084F51F12640C4C400B05BFC /* Project object */;
+}
