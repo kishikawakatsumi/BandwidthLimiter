@@ -33,7 +33,7 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.kishikawakatsumi.BandwidthLimiter.helper</key>
-		<string>identifier &quot;com.kishikawakatsumi.BandwidthLimiter.helper&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Distribution: Katsumi Kishikawa (27AEDK3C9F)&quot; </string>
+		<string>identifier "com.kishikawakatsumi.BandwidthLimiter.helper" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Katsumi Kishikawa (9NXEJ2L8Q6)"</string>
 	</dict>
 </dict>
 </plist>

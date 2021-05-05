@@ -12,7 +12,7 @@
 	<string>2</string>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>identifier &quot;com.kishikawakatsumi.BandwidthLimiter&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Distribution: Katsumi Kishikawa (27AEDK3C9F)&quot;</string>
+		<string>identifier "com.kishikawakatsumi.BandwidthLimiter" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Katsumi Kishikawa (9NXEJ2L8Q6)"</string>
 	</array>
 </dict>
 </plist>
