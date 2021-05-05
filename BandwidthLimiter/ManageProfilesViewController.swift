@@ -97,7 +97,9 @@ class ManageProfilesViewController: NSViewController {
         updateCurrentCustomProfile()
         
         for (index, setting) in temporaryAppState.settings.enumerated() {
-            if !(Profile.presets + temporaryAppState.customProfiles).contains(setting.profile) {
+            let profiles = Profile.presets + temporaryAppState.customProfiles
+            let profileNames = profiles.map { $0.title }
+            if !profileNames.contains(setting.profile.title) {
                 temporaryAppState.settings[index].profile = Profile.presets[0]
             }
         }

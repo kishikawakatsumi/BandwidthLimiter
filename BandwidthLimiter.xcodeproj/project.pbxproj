@@ -108,7 +108,6 @@
 		085B23B52642963F00C91993 /* AuditTokenHack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuditTokenHack.h; sourceTree = "<group>"; };
 		085B23B62642963F00C91993 /* AuditTokenHack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuditTokenHack.m; sourceTree = "<group>"; };
 		085B23B82642967300C91993 /* OSStatus+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSStatus+Extensions.swift"; sourceTree = "<group>"; };
-		085B23BA2642A52A00C91993 /* uninstall_privileged_helper.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uninstall_privileged_helper.sh; sourceTree = "<group>"; };
 		0872DEBD264253F200E651E2 /* ManageProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageProfilesViewController.swift; sourceTree = "<group>"; };
 		0872DEBF264272D200E651E2 /* NewProfileNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,7 +187,6 @@
 				084F521B2640C57600B05BFC /* Info.plist */,
 				084F521C2640C60600B05BFC /* launchd.plist */,
 				085B23B42642963E00C91993 /* com.kishikawakatsumi.BandwidthLimiter.helper-Bridging-Header.h */,
-				085B23BA2642A52A00C91993 /* uninstall_privileged_helper.sh */,
 			);
 			path = com.kishikawakatsumi.BandwidthLimiter.helper;
 			sourceTree = "<group>";

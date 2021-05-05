@@ -7,12 +7,12 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1.0</string>
+	<string>0.1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>identifier &quot;com.kishikawakatsumi.BandwidthLimiter&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Development: Katsumi Kishikawa (9NXEJ2L8Q6)&quot;</string>
+		<string>identifier &quot;com.kishikawakatsumi.BandwidthLimiter&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Distribution: Katsumi Kishikawa (27AEDK3C9F)&quot;</string>
 	</array>
 </dict>
 </plist>
