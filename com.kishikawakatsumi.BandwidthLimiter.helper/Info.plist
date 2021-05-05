@@ -9,7 +9,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.1.2</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>SMAuthorizedClients</key>
 	<array>
 		<string>identifier "com.kishikawakatsumi.BandwidthLimiter" and anchor apple generic and certificate leaf[subject.CN] = "Developer ID Application: Katsumi Kishikawa (27AEDK3C9F)"</string>
