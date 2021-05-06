@@ -16,8 +16,10 @@ If you leave the hostname blank, all network access will be restricted.
 
 **Status Icon**
 
-<img width="246" alt="Screen Shot 2021-05-06 at 21 25 07" src="https://user-images.githubusercontent.com/40610/117298042-de7b5080-aeb1-11eb-9d95-41b8bdde201c.png">　<img width="246" alt="Screen Shot 2021-05-06 at 21 32 40" src="https://user-images.githubusercontent.com/40610/117298751-b17b6d80-aeb2-11eb-936b-9fe44368078e.png">
+No bandwidth limitation
 
-Right: Bandwidth limiting enabled
+<img width="246" alt="Screen Shot 2021-05-06 at 21 25 07" src="https://user-images.githubusercontent.com/40610/117298042-de7b5080-aeb1-11eb-9d95-41b8bdde201c.png">
 
-Left: No bandwidth limitation
+Bandwidth limiting enabled
+
+<img width="246" alt="Screen Shot 2021-05-06 at 21 32 40" src="https://user-images.githubusercontent.com/40610/117298751-b17b6d80-aeb2-11eb-936b-9fe44368078e.png">
