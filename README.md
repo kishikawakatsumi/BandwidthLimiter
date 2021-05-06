@@ -23,3 +23,8 @@ No bandwidth limitation
 Bandwidth limiting enabled
 
 <img width="246" alt="Screen Shot 2021-05-06 at 21 32 40" src="https://user-images.githubusercontent.com/40610/117298751-b17b6d80-aeb2-11eb-936b-9fe44368078e.png">
+
+
+## Download
+
+https://github.com/kishikawakatsumi/BandwidthLimiter/releases/latest
