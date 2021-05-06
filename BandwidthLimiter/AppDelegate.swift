@@ -22,6 +22,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         statusItem?.menu = menu
 
+        ExecutionServiceProxy().checkForUpdates { (needsUpdate) in
+            if needsUpdate {
+                try? ExecutionServiceProxy().installHelper()
+            }
+        }
+
         App.shared.$appState
             .removeDuplicates()
             .receive(on: DispatchQueue.main)
@@ -33,6 +39,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
+        guard ExecutionService.isHelperInstalled else {
+            return .terminateNow
+        }
+
         do {
             let tempFile = try TemporaryFile(creatingTempDirectoryForFilename: "network.sh")
             let script = TrafficShaper.generateShellScript(settings: [])

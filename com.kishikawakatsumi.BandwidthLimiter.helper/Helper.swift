@@ -10,6 +10,10 @@ final class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
         self.listener.delegate = self
     }
 
+    func getVersion(completion: (String) -> Void) {
+        completion(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0")
+    }
+
     func executeScript(at path: String, options: [String], completion: @escaping (String?, Error?) -> Void) {
         NSLog("Executing script at \(path)")
         do {
