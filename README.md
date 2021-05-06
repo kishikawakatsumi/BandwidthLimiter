@@ -1,10 +1,10 @@
 # BandwidthLimiter
 
+The Mac application can quickly put a bandwidth limit on the network from the menu bar.
+
 <img width="292" alt="Screen Shot 2021-05-06 at 21 26 36" src="https://user-images.githubusercontent.com/40610/117297994-d4f1e880-aeb1-11eb-8064-55404e0204d7.png">
 
-
-It is the Mac application that can quickly put a bandwidth limit on the network from the menu bar.
-You can set a different speed limit for each host.
+In addition, you can set a different speed limit for each host.
 
 <img width="560" alt="Screen Shot 2021-05-06 at 21 23 34" src="https://user-images.githubusercontent.com/40610/117298061-e2a76e00-aeb1-11eb-972a-a7f71b73b440.png">
 
