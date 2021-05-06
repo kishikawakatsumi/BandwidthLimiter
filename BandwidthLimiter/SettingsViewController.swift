@@ -24,7 +24,6 @@ class SettingsViewController: NSViewController {
                 do {
                     let tempFile = try TemporaryFile(creatingTempDirectoryForFilename: "network.sh")
                     let script = TrafficShaper.generateShellScript(settings: appState.settings)
-                    print(tempFile.fileURL.path)
                     guard let data = script.data(using: .utf8) else { return }
                     try data.write(to: tempFile.fileURL)
 
@@ -33,7 +32,8 @@ class SettingsViewController: NSViewController {
                         case .success(let output):
                             print(output)
                         case .failure(let error):
-                            print(error)
+                            let alert = NSAlert(error: error)
+                            alert.runModal()
                         }
 
                         DispatchQueue.main.async { [weak self] in
@@ -44,7 +44,8 @@ class SettingsViewController: NSViewController {
                         }
                     }
                 } catch {
-                    print(error)
+                    let alert = NSAlert(error: error)
+                    alert.runModal()
                 }
             }
             .store(in: &cancellables)
@@ -157,12 +158,5 @@ extension SettingsViewController: NSTableViewDelegate {
     @IBAction
     private func toggleLimiterStatus(_ sender: NSButton) {
         App.shared.appState.isActive.toggle()
-    }
-}
-
-extension SettingsViewController: NSMenuDelegate {
-    func menu(_ menu: NSMenu, update item: NSMenuItem, at index: Int, shouldCancel: Bool) -> Bool {
-        print(item.title)
-        return true
     }
 }
