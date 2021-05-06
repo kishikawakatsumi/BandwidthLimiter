@@ -1,4 +1,4 @@
-# BandwidthLimiter
+# Bandwidth Limiter for Mac
 
 The Mac application can quickly put a bandwidth limit on the network from the menu bar.
 
